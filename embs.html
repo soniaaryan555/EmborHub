@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmbroideryHub | Handcrafted India</title>
+    <link href="embs.css" rel="stylesheet"type="text/css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">Embro<span>Hub</span></div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for handcrafted embroidery...">
+            <button>Search</button>
+        </div>
+
+        <div class="nav-options">
+            <div class="nav-item">
+                Hello, Sign in
+                <strong>Account</strong>
+            </div>
+            <div class="nav-item">
+                Returns
+                <strong>& Orders</strong>
+            </div>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Handcrafted Elegance</h1>
+            <p>Discover the finest Indian embroidery art for your home and wardrobe.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Best Sellers</h2>
+        
+        <div class="product-grid" id="product-list">
+        </div>
+    </div>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <span class="close-cart" onclick="toggleCart()">✕</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p style="text-align:center; margin-top:20px; color:#666;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">
+                <span>Total:</span>
+                <span id="total-price">₹0</span>
+            </div>
+            <button class="btn-checkout" onclick="alert('Proceeding to Payment Gateway...')">Proceed to Buy</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 EmbroideryHub India. All Rights Reserved.</p>
+        <p>Privacy Policy | Terms of Use | Sales and Refunds</p>
+    </footer>
+    <script src="embs.js"></script>
+</body>
+</html>
